@@ -48,10 +48,11 @@
                 <td><%=request.getParameter( "name" )%></td>
                 <td><%=request.getParameter( "height" )%></td>
                 <td><%=request.getParameter( "weight" )%></td>
-                <td><%=bmiValue%> <img src="resources/<%=category%>.gif" alt="<%=category%>" style="width:25px;height:25px" /></td>
+                <td><%=bmiValue%><img src="resources/<%=category%>.gif" alt="<%=category%>" style="width:25px;height:25px" /></td>
               </tr>
             
             </table>
+              <img src="../../../../Trash/test.gif" alt="testpic" style="width:25px;height:25px" />
          </div>
     </body>
 </html>
