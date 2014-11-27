@@ -8,7 +8,7 @@
     <packaging>war</packaging>
 	<!--<distributionManagement>
 		<repository>
-			  <id>internal.distMgmnt</id>
+			  <id>C:\GitRepo\bmi2</id>
 			  <name>C:\GitRepo\bm2DeployRepo</name>
 			  <url>localhost:9090</url>
 		</repository>
@@ -37,11 +37,12 @@
 
     <build>
         <plugins>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<version>1.0.1.Final</version>
-			</plugin>
+			</plugin>-->
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
