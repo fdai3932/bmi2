@@ -16,7 +16,7 @@
                 <uniqueVersion>false</uniqueVersion>
                 <id>corp1</id>
                 <name>https://github.com/fdai3932/bmi2.git</name>
-                <url>http://ec2-54-69-79-235.us-west-2.compute.amazonaws.com:8080</url>
+                <url>http://ec2-54-69-79-235.us-west-2.compute.amazonaws.com</url>
                 <layout>default</layout>
             </repository>
 	</distributionManagement>
