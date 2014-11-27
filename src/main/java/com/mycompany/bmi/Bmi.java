@@ -16,6 +16,6 @@ public class Bmi {
         float weight = Float.parseFloat( weightParam );
         
         if(height == 0) height = -1.0f;
-        return  weight / Math.pow( height, 2.0);
+        return weight / Math.pow( height, 2.0);
     }
 }
