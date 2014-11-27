@@ -13,6 +13,7 @@
 			  <url>localhost:9090/bmi2</url>
 		</repository>
 	</distributionManagement>
+        
     <name>bmi2</name>
 
     <properties>
