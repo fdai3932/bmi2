@@ -6,7 +6,13 @@
     <artifactId>bmi2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-
+	<distributionManagement>
+		<repository>
+			  <id>internal.distMgmnt</id>
+			  <name>C:/GitRepo/bm2DeployRepo</name>
+			  <url>C:/Tool/wildfly-8.1.0.Final/standalone/deployments</url>
+		</repository>
+	</distributionManagement>
     <name>bmi2</name>
 
     <properties>
