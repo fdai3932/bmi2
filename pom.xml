@@ -6,13 +6,13 @@
     <artifactId>bmi2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-	<distributionManagement>
+	<!--<distributionManagement>
 		<repository>
 			  <id>internal.distMgmnt</id>
-			  <name>C:/GitRepo/bm2DeployRepo</name>
-			  <url>localhost:9090/bmi2</url>
+			  <name>C:\GitRepo\bm2DeployRepo</name>
+			  <url>localhost:9090</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement>-->
     <name>bmi2</name>
 
     <properties>
@@ -37,6 +37,11 @@
 
     <build>
         <plugins>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.0.1.Final</version>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
