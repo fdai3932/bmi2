@@ -45,34 +45,34 @@
 
     <build>
         <plugins>
-	<plugin>
-    <groupId>org.glassfish</groupId>
-    <artifactId>maven-embedded-glassfish-plugin</artifactId>
-    <version>4.0</version>
-    <configuration>
-      <goalPrefix>glassfish</goalPrefix>
-      <app>target/bmi2.war</app>
-      <port>8080</port>
-	<!-- <contextRoot>test</contextRoot>-->
-	
-		<glassfishDirectory>${glassfish.glassfishDirectory}</glassfishDirectory>
-		<user>admin</user>
-		<adminPassword>admin</adminPassword>
-		<domain>
-			<name>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</name>
-			<host>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</host>
-			<adminPor>4848</adminPort>
-		</domain>
-    </configuration>
-    <executions>
-      <execution>
-        <phase>package</phase>
-        <goals>
-         <goal>deploy</goal>
-        </goals>
-      </execution>
-    </executions>
-  </plugin>
+			<plugin>
+			<groupId>org.glassfish</groupId>
+			<artifactId>maven-embedded-glassfish-plugin</artifactId>
+			<version>4.0</version>
+			<configuration>
+			  <goalPrefix>glassfish</goalPrefix>
+			  <app>target/bmi2.war</app>
+			  <port>8080</port>
+			<!-- <contextRoot>test</contextRoot>-->
+			
+				<glassfishDirectory>${glassfish.glassfishDirectory}</glassfishDirectory>
+				<user>admin</user>
+				<adminPassword>admin</adminPassword>
+				<domain>
+					<name>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</name>
+					<host>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</host>
+					<adminPort>4848</adminPort>
+				</domain>
+			</configuration>
+			<executions>
+			  <execution>
+				<phase>package</phase>
+				<goals>
+				 <goal>deploy</goal>
+				</goals>
+			  </execution>
+			</executions>
+		  </plugin>
             
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
