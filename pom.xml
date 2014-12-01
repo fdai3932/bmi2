@@ -53,7 +53,7 @@
 			  <goalPrefix>glassfish</goalPrefix>
 			  <app>target/bmi2-1.0-SNAPSHOT.war</app>
 			  <port>8080</port>
-			<!-- <contextRoot>test</contextRoot>-->
+			<contextRoot>test</contextRoot>
 			
 				<glassfishDirectory>${glassfish.glassfishDirectory}</glassfishDirectory>
 				<user>admin</user>
