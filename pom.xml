@@ -48,7 +48,7 @@
 			<plugin>
 			<groupId>org.glassfish</groupId>
 			<artifactId>maven-embedded-glassfish-plugin</artifactId>
-			<version>4.0</version>
+			<version>4.1</version>
 			<configuration>
 			  <goalPrefix>glassfish</goalPrefix>
 			  <app>target/bmi2-1.0-SNAPSHOT.war</app>
