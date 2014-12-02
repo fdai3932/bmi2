@@ -46,7 +46,7 @@
         <pluginRepository>
             <id>maven.java.net</id>
             <name>Java.net Repository for Maven</name>
-            <url>https://maven.java.net/content/repositories/releases/org/glassfish/main/extras/glassfish-embedded-all/4.1/</url>
+            <url>https://maven.java.net/content/repositories/releases/org/glassfish/main/extras/glassfish-embedded-all</url>
         </pluginRepository>
     </pluginRepositories>
     <build>
