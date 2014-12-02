@@ -87,15 +87,15 @@
 				   <version>4.0-b83</version>
 				 </dependency>
 			   </dependencies>
-				<executions>  
+				<!--<executions>  
 					   <execution>  
 						 </execution>
-						 <!--<phase>install</phase>-->
+						 <phase>install</phase>
 						 <goals>  
 						   <goal>redeploy</goal>  
 						 </goals>  
 					   </execution>  
-				 </executions> 
+				 </executions> -->
 			 </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
