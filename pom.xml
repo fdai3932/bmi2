@@ -72,11 +72,6 @@
 				   <version>4.0-b83</version>
 				 </dependency>
 			   </dependencies>
-			 </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
                 <configuration>
 					<goalPrefix>glassfish</goalPrefix>
 					<app>target/bmi2-1.0-SNAPSHOT</app>
@@ -92,12 +87,17 @@
 				</configuration>
 				<executions>  
 					   <execution>  
-						 <!--</execution><phase>install</phase>-->
+						 </execution><phase>install</phase>-
 						 <goals>  
-						   <goal>deploy</goal>  
+						   <goal>redeploy</goal>  
 						 </goals>  
 					   </execution>  
 				 </executions> 
+			 </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
