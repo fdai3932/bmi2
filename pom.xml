@@ -51,17 +51,17 @@
     </pluginRepositories>
     <build>
         <plugins>
-			<plugin>
+			<!--<plugin>
 			   <groupId>org.glassfish.embedded</groupId>
 				 <artifactId>maven-embedded-glassfish-plugin</artifactId>
 				 <version>3.1.2.2</version>
-				 <!--
+				 <!- start comment -
 				 <configuration>
 					<app>target/${project.artifactId}-${project.version}</app>
 					<port>8282</port>
 					<contextRoot>${project.artifactId}</contextRoot>
 				 </configuration>
-				 -->
+				 - end comemnt ->
                 <configuration>
 					<goalPrefix>glassfish</goalPrefix>
 					<app>target/bmi2-1.0-SNAPSHOT</app>
@@ -87,7 +87,7 @@
 				   <version>4.0-b83</version>
 				 </dependency>
 			   </dependencies>
-				<!--<executions>  
+				<!-start comment -<executions>  
 					   <execution>  
 						 </execution>
 						 <phase>install</phase>
@@ -95,8 +95,20 @@
 						   <goal>redeploy</goal>  
 						 </goals>  
 					   </execution>  
-				 </executions> -->
-			 </plugin>
+				 </executions> - end comment >
+			 </plugin> 
+			 <plugin>
+				<groupId>org.glassfish.maven.plugin</groupId>
+				<artifactId>maven-glassfish-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -109,7 +121,30 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
-            </plugin>
+            </plugin>-->
+			 <plugin>
+            <groupId>org.glassfish.maven.plugin</groupId>
+            <artifactId>maven-glassfish-plugin</artifactId>
+            <configuration>
+                <terse>false</terse>
+                <echo>true</echo>
+                <debug>true</debug>
+                <glassfishDirectory>ec2-54-69-79-235.us-west-2.compute.amazonaws.com:8080/</glassfishDirectory>
+                <user>admin</user>
+                <adminPassword>admin</adminPassword>
+                <domain>
+                    <name>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</name>
+                    <host>ec2-54-69-79-235.us-west-2.compute.amazonaws.com</host>
+                    <adminPort>4848</adminPort>
+                </domain>
+                <components>
+                    <component>
+                        <name>${project.artifactId}</name>
+                        <artifact>target/bmi2-1.0-SNAPSHOT.war</artifact>
+                    </component>
+                </components>
+            </configuration>
+        </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
