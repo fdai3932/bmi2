@@ -89,7 +89,8 @@
 			   </dependencies>
 				<executions>  
 					   <execution>  
-						 </execution><phase>install</phase>-
+						 </execution>
+						 <!--<phase>install</phase>-->
 						 <goals>  
 						   <goal>redeploy</goal>  
 						 </goals>  
