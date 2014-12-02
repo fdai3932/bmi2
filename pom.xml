@@ -139,7 +139,7 @@
                 </domain>
                 <components>
                     <component>
-                        <name>${project.artifactId}</name>
+                        <name>bmi2</name>
                         <artifact>target/bmi2-1.0-SNAPSHOT.war</artifact>
                     </component>
                 </components>
