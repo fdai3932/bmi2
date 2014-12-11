@@ -8,7 +8,7 @@
     <packaging>war</packaging><!--
 	<distributionManagement>
 		<repository>
-			  <id>internal.distMgmnt</id>
+			  <id>internal.distMgmnt</id> 
 			  <name>C:/GitRepo/bm2DeployRepo</name>
 			  <url>localhost:9090/bmi2</url>
 		</repository>
