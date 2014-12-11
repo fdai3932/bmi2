@@ -23,7 +23,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <title>BMI Form</title>
+        <title>BMI Form Demo</title>
     </head>
     <body>
         <h4>BMI FORM (JSP VERSION)</h4>
